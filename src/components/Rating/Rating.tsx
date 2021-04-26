@@ -13,7 +13,7 @@ export function Rating(props: RatingPropsType) {
             <Star selected={false}/>
             <Star selected={false}/>
             <Star selected={false}/>
-        </div>)gi
+        </div>)
     }
     if (props.value === 2) {
         return (<div>
