@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Accordion from "./components/Accordion/Accordion";
+import {Rating} from "./components/Rating/Rating";
+import Codewars from "./components/Codewars/Codewars";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    return (
+        <>
+            <Accordion titleValue={"Статья 1"} collapsed={true} />
+            <Rating value={3}/>
+            <Accordion titleValue={"Статья 2"} collapsed={false}/>
+            <Rating value={4}/>
+            <Accordion titleValue={"Статья 3"} collapsed={true}/>
+            <Rating value={1} />
+            <Codewars />
+        </>
+
+    )
+};
+
+
 
 export default App;
